@@ -29,6 +29,5 @@ def format_json(request: HttpRequest):
         return JsonResponse({'error': 'Invalid request method'}, status=405)
 
 
-
 def home(request: HttpRequest):
     return HttpResponse('<h1> hello world </h1>')
